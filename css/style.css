@@ -1,0 +1,404 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	background-color: #1a1a1a;
+	font-family: 'Roboto', sans-serif;
+}
+
+header{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	padding-top: 50px;
+	padding-bottom: 60px;
+}
+
+header h1, h2{
+	color: whitesmoke;
+	line-height: 35px;
+}
+header .nombre{
+	color: #F9E79F;
+	font-size: 25px	;
+}
+header div{
+	padding-top: 150px;
+	padding-right: 10px;
+}
+
+.botonCelular{
+	display: none;
+}
+h3{
+	color: whitesmoke;
+}
+.boton a{
+	text-decoration: none;
+	color: ghostwhite;
+}
+
+.boton{
+	text-align: center;
+	color: ghostwhite;
+	text-shadow: 1px 1px black;
+	background-color:#F9E79F ;
+	width: 40%;
+	margin-top: 50px;
+	padding: 10px;
+	border-radius: 100px;
+	box-shadow: 1px 1px whitesmoke;
+}
+
+.boton:hover{
+	background-color:#ffd866 ;
+	transform: scale(1.01);
+}
+
+.linea{
+	padding-top: 50px;
+	display: flex;
+	justify-content: center;
+}
+
+hr{
+	width: 30%;
+}
+.sobreMi{
+	text-align: center;
+	padding: 100px;
+	display: grid;
+	grid-template-areas: "img img h2 h2"
+						 "img img p p"
+						 "skill skill skill skill";
+	justify-content: center;
+	align-items: center;
+}
+	
+.sobreMi img{
+
+	grid-area: img;
+	width: 80%;
+}
+
+.sobreMi h2{
+	grid-area: h2;
+	margin-top: 50px;
+	color:#ffd866 ;
+	font-size: 40px;
+}
+
+.sobreMi p{
+	grid-area: p;
+	color: whitesmoke;
+	font-size: 23px;
+}
+
+.skill{
+	grid-area: skill;
+	text-align: center;
+}
+
+.skill div img{
+	margin-top: 20px;
+	width: 4%;
+	padding: 2px;
+}
+
+
+
+.ultTrabajos{
+	padding: 100px;
+	display: grid;
+	grid-template-areas: "h3 h3"
+						 "foto1 foto2"
+						 "foto3 foto4";
+	justify-content: center;
+
+}
+.ultTrabajos .foto img{
+	justify-content: center;
+	width:90%;
+	opacity: 0.5;
+	align-self: end;
+}
+
+.ultTrabajos .foto img:hover{
+	opacity: 1;
+	transform: scale(1.02);
+}
+
+.ultTrabajos h3{
+	grid-area: h3;
+	margin-bottom: 60px;
+	text-align: center;
+	margin-top: 50px;
+	color:#ffd866 ;
+	font-size: 40px;
+}
+
+.foto1{
+	grid-area: foto1;
+}
+
+.foto2{
+	grid-area: foto2;
+}
+
+.foto3{
+	grid-area: foto3;
+}
+
+.foto4{
+	grid-area: foto4;
+}
+
+footer{
+	padding: 30px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+footer h4{
+	color: whitesmoke;
+}
+
+.rede{
+	width: 30px;
+}
+
+
+/* media queries */
+
+@media only screen and (max-width: 834px) and (min-width: 415px) {
+		html{
+			width: 100%;
+		}
+		header{
+			width: 100%;
+			display: flex;
+			flex-direction: column;
+			align-content: center;
+			padding: 50px;
+
+		}
+		header div{
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			padding-top: 50px;
+		}
+
+		.boton{
+			display: none;
+		}
+
+		.botonCelu a{
+			text-decoration: none;
+			color: whitesmoke;
+
+		}
+		.botonCelu{
+			text-align: center;
+			color: ghostwhite;
+			text-shadow: 1px 1px black;
+			background-color:#F9E79F ;
+			width: 40%;
+			margin-top: 10px;
+			padding: 10px;
+			border-radius: 100px;
+			box-shadow: 1px 1px whitesmoke;
+		}
+		.linea{
+			width: 100%;
+		}
+
+		hr{
+			width: 100%;
+		}
+
+		.botonCelular{
+			display: flex;
+			justify-content: center;
+		}
+/* estilos sobre mi */
+
+		.sobreMi{
+			width: 100%;
+			padding: 50px;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+
+		.sobreMi h2{
+			margin-bottom: 25px;
+			font-size: 50px
+		}
+		.sobreMi h2,p{
+			text-align: center;
+		}
+
+		.sobreMi p{
+			font-size: 23px;
+			line-height: 25px;
+		}
+
+
+		.skill div img{
+			width: 30px;
+			padding: 2px;
+		}
+
+		.skillDos{
+			display: none;
+		}
+
+
+		.ultTrabajos h3{
+			font-size: 50px;
+		}
+
+.ultTrabajos{
+			width: 100%;
+			padding: 50px;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+		footer{
+			width: 100%;
+			padding: 50px;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+
+		footer h4{
+			font-size: 20px;
+		}
+		footer img{
+			width: 8%;
+		}
+}
+
+
+	@media (max-width: 414px) {
+		html{
+			width: 100%;
+		}
+		header{
+			width: 100%;
+			display: flex;
+			flex-direction: column;
+			align-content: center;
+			padding: 50px;
+
+		}
+		header div{
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			padding-top: 50px;
+		}
+
+		.boton{
+			display: none;
+		}
+
+		.botonCelu a{
+			text-decoration: none;
+			color: whitesmoke;
+
+		}
+		.botonCelu{
+			text-align: center;
+			color: ghostwhite;
+			text-shadow: 1px 1px black;
+			background-color:#F9E79F ;
+			width: 40%;
+			margin-top: 10px;
+			padding: 10px;
+			border-radius: 100px;
+			box-shadow: 1px 1px whitesmoke;
+		}
+		.linea{
+			width: 100%;
+		}
+
+		hr{
+			width: 100%;
+		}
+
+		.botonCelular{
+			display: flex;
+			justify-content: center;
+		}
+
+		.ultTrabajos{
+			width: 100%;
+			padding: 50px;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+/* estilos sobre mi */
+
+		.sobreMi{
+			width: 100%;
+			padding: 50px;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+
+		.sobreMi h2{
+			margin-bottom: 25px;
+			font-size: 50px
+		}
+		.sobreMi h2,p{
+			text-align: center;
+		}
+
+		.sobreMi p{
+			font-size: 23px;
+			line-height: 25px;
+		}
+
+
+		.skill div img{
+			width: 30px;
+			padding: 2px;
+		}
+
+		.skillDos{
+			display: none;
+		}
+
+
+		.ultTrabajos h3{
+			font-size: 50px;
+		}
+
+		footer{
+			width: 100%;
+			padding: 50px;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+
+		footer h4{
+			font-size: 20px;
+		}
+		footer img{
+			width: 8%;
+		}
+}
+/*
+
+
+
